@@ -220,7 +220,7 @@ function createFallingPlantImage() {
     }
 
     const img = document.createElement('img');
-    img.src = 'dead_plant.png'; // Replace with your image path
+    img.src = 'dead_plant.png'; 
     img.classList.add('fallingImage');
     img.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
     img.style.animationDuration = Math.random() * 2 + 3 + 's'; // Random fall duration
@@ -239,7 +239,7 @@ function createFallingBirdImage() {
     }
 
     const img = document.createElement('img');
-    img.src = 'bird1.png'; // Replace with your image path
+    img.src = 'bird1.PNG'; 
     img.classList.add('fallingImage');
     img.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
     img.style.animationDuration = Math.random() * 2 + 3 + 's'; // Random fall duration
