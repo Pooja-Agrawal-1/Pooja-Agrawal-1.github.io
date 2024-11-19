@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save The Environment</title>
+    <link rel="stylesheet" href="file_styles.css">
+</head>
+<body>
+    <div class="body-bg"></div>
+    <div class="overlay" id="backgroundOverlay"></div>
+    <div class="content">
+        <div id = "box-one">
+            <h1>Welcome! Help Save The Environment!</h1>
+        </div>
+
+        <div id = "about-us">
+            <h3>About Us</h3>
+            <p>We are committed to helping restore the environment and our three goals surround three different sectors: forests, 
+                which includes the plants and animals there, the sea, along with the coral reefs and marine life, and reduce 
+                the amount of landfills tarnishing our world's natural beauty. The graphs show the current trend, and with your help, 
+                we can extrapolate up to the remarkable change reflected in the graph for the future upcoming years. Thank you for taking
+                the time to donate to this really important cause, which will help us all. </p>
+        </div>
+
+        <!--finish everything up by testing and making it look neat-->
+        <div id = "containerSea">
+            <div id = "box-two" class = "sea">
+                <h2>Save the Seas!</h2>
+            </div>
+            <img id = "seaImage" class = "sea-image" src = "seas.jpeg">
+            <img id = "seaGraph" src = "seaGraph1.png">
+        </div>
+     
+        <button id = "seas-button">Donate money</button>
+    
+        <div id="containerForest"> 
+            <div id="box-three" class="forest"> 
+                <h2>Save the Forests!</h2> 
+            </div> 
+            <img id = "forestImage" class="forest-image" src="forests.jpg"> 
+            <img id = "forestGraph" src = "forestGraph2.png">
+        </div>
+     
+        <button id = "forests-button">Donate money</button>
+    
+        <div id = "containerLandfill">
+            <div id = "box-four">
+                <h2>Remove Lanfills!</h2>
+            </div>
+            <img id = "landfillImage" class = "landfill-image" src="cleanLand.jpg">
+            <img id = "landfillGraph" src = "landfillGraph1.png">
+        </div>
+    
+        <button id = "landfills-button">Donate money</button>
+
+        <div id = "falling-bird-images-container"></div>
+        <div id = "falling-plant-images-container"></div>
+
+        <audio id ="glitch-sound" loop>
+            <source src="glitch_sound_effect.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id ="flatline-sound">
+            <source src = "heart_monitor_flatline.mp3" type = "audio/mpeg">
+            Your browser does not supoort the audio element.
+        </audio>
+            <!--<main>
+            <section id="graphs">
+                 Placeholder for graphs 
+                <h2>Environmental Impact</h2>
+            </section>
+            <section id="actions">
+                 Placeholder for action buttons 
+                <button id="actionButton">Help the Environment</button>
+            </section>
+        </main>-->
+    </div>
+    <div id = footer>
+        <p>© 2024 Save the Earth Project</p>
+    </div>
+</body>
+
+    <script src="file_buttons.js"></script>

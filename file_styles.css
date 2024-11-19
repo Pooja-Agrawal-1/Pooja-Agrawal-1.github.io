@@ -1,0 +1,330 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+.body-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    transition: background 0.5s ease;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+#box-one {
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about-us{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1rem;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box-two{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 33%;
+    height: 100px;
+    margin-top: 5%;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#seas-button{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#box-three{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 33%;
+    height: 100px;
+    margin-top: 5%;
+    margin-right: 10px;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#forests-button{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#box-four{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 33%;
+    height: 100px;
+    margin-top: 5%;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#landfills-button{
+    background-color: #124213;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#containerSea { 
+    display: flex; 
+    align-items: center; /* Aligns items vertically */ 
+} 
+
+#seaImage{
+    width:60%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#seaGraph{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#containerForest { 
+    display: flex; 
+    align-items: center; /* Aligns items vertically */ 
+} 
+
+#forestImage{
+    width:35%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#forestGraph{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#containerLandfill { 
+    display: flex; 
+    align-items: center; /* Aligns items vertically */ 
+} 
+
+#landfillImage{
+    width:35%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#landfillGraph{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.glitch-active { 
+    position: relative;
+    animation: darken 45s forwards, glitch 0.5s infinite;
+}
+
+.glitch-active::before, .glitch-active::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    background: url(forests.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    animation: glitch 0.5s infinite;
+}
+
+.glitch-active::before{
+    left: -2px;
+    animation-delay: 0.3s;
+}
+
+.glitch-active::after{
+    left: 2px;
+    animation-delay: 0.5s;
+}
+
+.darkening{
+    animation: darken1 30s forwards;
+}
+
+@keyframes glitch{
+    0%{
+        clip: rect(44px, 450px, 56px, 0);
+        transform: translate(-10px, -10px);
+    }
+    20%{
+        clip: rect(10px, 450px, 20px, 0);
+        transform: translate(10px, 10px);
+    }
+    40%{
+        clip: rect(78px, 450px, 44px, 0);
+        transform: translate(-10px, 10px);
+    }
+    60%{
+        clip: rect(56px, 450px, 66px, 0);
+        transform: translate(10px, -10px);
+    }
+    80%{
+        clip: rect(30px, 450px, 40px, 0);
+        transform: translate(-10px, -10px);
+    }
+    100%{
+        clip: rect(44px, 450px, 56px, 0);
+        transform: translate(0,0);
+    }
+}
+
+@keyframes darken {
+    0%{
+        filter: brightness(1);
+    }
+    100%{
+        filter: brightness(0);
+    }
+    
+}
+
+@keyframes darken1 {
+    0%{
+        filter: brightness(1);
+    }
+    10%{
+        filter: brightness(0.9);
+    }
+    20%{
+        filter: brightness(0.8);
+    }
+    30%{
+        filter: brightness(0.7);
+    }
+    40%{
+        filter: brightness(0.6);
+    }
+    50%{
+        filter: brightness(0.5);
+    }
+    60%{
+        filter: brightness(0.4);
+    }
+    70%{
+        filter: brightness(0.3);
+    }
+    80%{
+        filter: brightness(0.2);
+    }
+    90%{
+        filter: brightness(0.1);
+    }
+    100%{
+        filter: brightness(0);
+    }
+    
+}
+
+
+
+#falling-bird-images-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#falling-plant-images-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fallingImage{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform: translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+#footer {
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 98%;
+}
