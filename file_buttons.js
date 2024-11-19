@@ -239,7 +239,7 @@ function createFallingBirdImage() {
     }
 
     const img = document.createElement('img');
-    img.src = 'bird1.PNG'; 
+    img.src = 'bird1.png'; 
     img.classList.add('fallingImage');
     img.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
     img.style.animationDuration = Math.random() * 2 + 3 + 's'; // Random fall duration
